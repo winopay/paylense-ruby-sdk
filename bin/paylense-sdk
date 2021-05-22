@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'bundler/setup'
+require 'paylense-sdk'
+require 'optparse'
+require_relative '../lib/paylense-sdk/cli'
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = 'Usage: Paylense --key key --secret secret'
+
+  opts.on('-k', '--key=KEY', String,
+          'Merchant account API Key') do |v|
+    options[:key] = v
+  end
+
+  opts.on('-s', '--secret=SECRET', String,
+          'Merchant account API secret') do |v|
+    options[:secret] = v
+  end
+end.parse!
+
+Paylense::CLI.new(options)
