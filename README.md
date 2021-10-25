@@ -1,4 +1,4 @@
-# Paylense API Ruby Gem
+# Paylense API Ruby Gem[STILL UNDER DEVELOPMENT]
 
 [![Gem Version](https://badge.fury.io/rb/paylense-sdk.svg)](https://badge.fury.io/rb/paylense-sdk)
 [![Build Status](https://travis-ci.org/winopay/paylense-sdk.svg?branch=master)](https://travis-ci.org/winopay/paylense-sdk)
